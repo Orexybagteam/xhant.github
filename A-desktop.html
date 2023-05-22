@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A-TrucMe Desktop 3.0</title>
+    <link rel="stylesheet" href="B-desktop-style.css">
+ </head>
+ <body>
+   
+ <div class="all-screen">
+ 	
+ 	
+ 	
+ <div class="dialog-container">
+	<div class="dialog">
+		    <div id="searchDi">
+			   <div id="searchbar" style="width:100%; height:28px;background-color: white;border-bottom: 2px solid #2962ff;border-radius:5px; display:flex;justify-content: left;align-items: center;padding-left: 10px;"><h1 style="color:#ccc;font-size: 12px;font-family: sans-serif;font-weight: normal; ">Pesquisar</h1></div>
+			   <div style="display:flex;justify-content:left;align-items: center;width: 100%;height: 25px;margin-top:3px;margin-bottom: 5px;">
+			   <p style="margin-left:3px;font-size: 13px;font-family: sans-serif;font-weight: normal;">All apps</p>
+			   <div id="peso3" style="flex:1;"></div>
+			   <button class="dialog-close" style="border:1px solid black; paddin:2px;background:transparent;color:black;border-radius: 5px;font-size: 10px;margin:3px;width:35px; height:15px;margin-top:5px;">Close</button></div>
+	</div>
+	     <div id="linear1" style="height: 40px;width: 100%;display: flex;justify-content: center;align-items: center;">
+	     <a href="G-chrome.html"><img src="F-chrome.png" id="chrome"></a>
+	     <a href="https://news.google.com/?authuser=0"><img src="H-news.png" id="news" style="margin-left: 25px;"></a>
+	     <a href="https://www.google.com/maps"><img src="F-maps.png" id="maps" style="margin-left: 25px;"></a>
+	     <a href="https://www.windy.com/"><img src="F-weather.png" id="windy" style="margin-left: 25px;"></a>
+	     <a href="https://play.google.com/store"><img src="F-play-store.png" id="play-store" style="margin-left: 25px;"></a>
+	     </div>
+	     
+	     <div id="linear2" style="height: 40px; width:100%;display: flex;justify-content: center;align-items: center;margin-bottom:5px;">
+	     <a href="H-code-editor.html"><img src="H-code-editor.png" id="code-editor"></a>
+	     <a href="https://codepen.io/pen/"><img src="H-codepen.png" id="codepen" style="margin-left: 23px"></a>
+	     <a href="https://paintz.app/"><img src="F-paint.png" id="paint" style="margin-left: 23px"></a>
+	     <a href="https://stellarium-web.org/"><img src="F-stellarium.png" id="stellarium" style="margin-left: 23px;"></a>
+	     <a href="https://www.youtube.com/"><img src="F-youtube.png" id="youtube" style="margin-left: 22px;"></a>
+	     </div>
+	     <p style="font-size: 12px;color: black;font-family: sans-serif;font-weight: normal;">Mais items nas próximas atualizações</p>
+	</div>
+	</div>
+	
+	
+ 	
+ <div id="coluna1">
+     <a href="https://www.youtube.com"><div class="app-youtube"><img src="F-youtube.png" id="youtube"><h1 id="app-youtube-text">YouTube</h1></div></a>
+     <a href="https://play.google.com/store"><div class="app-play-store"><img src="F-play-store.png" id="play-store"><h1 id="play-store-text">Play App</h1></div></a>
+     <a href="https://eos.com/landviewer/?lat=37.75100&lng=-97.82200&z=11"><div class="app-eos"><img src="F-eos.png" id="eos"><h1 id="eos-text">Eos</h1></div></a>
+     <a href="https://www.windy.com"><div class="app-weather"><img src="F-weather.png" id="windy"><h1 id="weather-text">Weather</h1></div></a>
+ </div>
+ 
+ <div id="coluna2">
+     <a href="https://www.google.com/maps"><div class="app-maps"><img src="F-maps.png" id="maps"><h1 id="maps-text">Mapas</h1></div></a>
+     <a href="https://stellarium-web.org/"><div class="app-stellarium"><img src="F-stellarium.png" id="stellarium"><h1 id="stellarium-text">Stellarium</h1></div></a>
+     <a href="https://paintz.app/"><div class="app-paint"><img src="F-paint.png" id="paint"><h1 id="paint-text">Paint</h1></div></a>
+     <a href="https://app.mediafire.com/myfiles"><div class="app-cloud"><img src="F-cloud.png" id="cloud"><h1 id="cloud-text">Nuvem</h1></div></a>
+ </div>
+ 
+ <div id="coluna3">
+     <a href="G-chrome.html"><div class="app-chrome"><img src="F-chrome.png" id="chrome"><h1 id="chrome-text">Chrome</h1></div></a>
+     <a href="H-code-editor.html"><div class="app-code-editor"><img src="H-code-editor.png" id="code-editor"><h1 id="code-editor-text">Editor</h1></div></a>
+     <a href="https://poki.com/"><div class="app-games"><img src="F-games.png" id="games"><h1 id="games-Text">Games</h1></div></a>
+     <a href="https://www.photopea.com/"><div class="app-photopea"><img src="F-photopea.png" id="photopea"><h1 id="photopea-text">Photopea</h1></div></a>
+ </div>
+ 
+ <div id="coluna4">
+ 	   <a href="J-widgets.html"><div class="app-widgets"><img src="F-widgets.png" id="widgets" onclick="showDialog()"><h1 id="widgets-text">Widgets</h1></div></a>
+ 	   <a href="https://mail.google.com/mail/mu/mp/255/#tl/priority/%5Esmartlabel_personal"><div class="app-chat"><img src="H-chat.png" id="chat"> <h1 id="chat-text">Chat</h1></div></a>
+     <a href="https://news.google.com/?authuser=0"><div class="app-news"><img src="H-news.png" id="news"><h1 id="news-text">Notícias</h1></div></a>
+     <a href="https://codepen.io/pen/"><div class="app-codepen"><img src="H-codepen.png" id="codepen"><h1 id="codepen-text">Code</h1></div></a>
+ </div>
+ 
+ </div>
+ 
+
+
+
+ <div class="popup-and-tooltip">
+ 	
+     <div id="batteryInfoPopUp" style="display:none;">
+     <p>Status da bateria: Conectado</p>
+     </div>
+     
+     <div id="computer-popup"style="display:none;">
+     <p>Status de segurança: 95% </p>
+     </div>
+     
+     <div id="wifi-info" style="display:none;">
+     <p>Wifi Status: Connected</p>
+     </div>
+     
+     <div id="sound-info" style="display:none;">
+     <p>Audio saída (MONO) 100%</p>
+     </div>
+     
+     <div id="keyboard-info" style="display:none;">
+     <p>Teclado (PORTUGUESE)</p>
+     </div>
+     
+ </div>
+
+
+ <div class="taskbar">
+ 	   <div id="taskbar-options">
+     <img src="E-settings.png" id="settings">
+     </div>
+     
+     <div id="peso1"></div>
+     
+     <div id="taskbar-notification">
+     <img src="E-keyboard.png" id="keyboard" onmouseover="showDiv9()" onmouseout="hideDiv10()">
+     <img src="E-volume.png" id="volume" onmouseover="showDiv7()" onmouseout="hideDiv8()">
+     <img src="E-wifi.png" id="wifi" onmouseover="showDiv5()" onmouseout="hideDiv6()">
+     <img src="E-security.png" id="security" onmouseover="showDiv3()" onmouseout="hideDiv4()">
+     <img src="E-battery.png" id="battery" onmouseover="showDiv1()" onmouseout="hideDiv2()">
+     <img src="E-power-off.png" id="power-off">
+     <img src="E-full-screen.png" id="full-screen">
+     </div>
+ </div>
+ <div id="taskbar-apps">
+ 	   <a href="https://docs.google.com/forms/d/1slorAo4P4Cp7Ey-L0n-28RVM7Uz3EwRytP7XIpR7iBQ/edit"><img src="G-forms.png" style="width: 13px;height:15px;margin-top: 2px;margin-right: 10px;"></a>
+ 	   <a href="https://news.google.com/?authuser=0"><img src="H-news.png" style="width:14px; heigh:14px; margin-top:2px;margin-right:8px"></a>
+     <img src="E-menu.png" id="menu">
+     <a href="G-chrome.html"><img src="F-chrome.png" id="chromeImg" style="height:15px;width:15px;margin-top:2px;margin-left:8px;"></a>
+     <a href="https://app.mediafire.com/myfiles"><img src="F-cloud.png" style="width: 15px;height:15px;margin-left: 8px;margin-top: 2px;"></a>
+ </div>
+   
+   
+   
+   
+ <script src="C-configuration-desktop.js"></script>
+ </body>
+ </html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+<style>
+         *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-weight: normal;
+         }
+         .linha{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 60px;
+         }
+         .coluna {
+            flex: 1;
+            height: 100vh;
+            padding: 0px;
+         }
+         .coluna:first-child {
+            overflow-y: auto;
+            background-color: #f1f1f1;
+         }
+         .coluna:last-child {
+            background-color: #ddd;
+         }
+         textarea {
+            width: 100%;
+            height: 100%;
+            resize: none;
+            font-size: 30px;
+            border: none;
+         }
+         iframe {
+            width: 100%;
+            height: 100%;
+            border-top: none;
+            border-left: 1px solid grey
+            background-color: white;
+         }
+         
+         #toolbar-layouts{
+           position: fixed;
+           top: 0;
+           width: 100%;
+           background-color: white;
+           z-index: 999; 
+           flex: 1;
+           margin-bottom: 10px;
+         }
+         
+         #toolbar-1{
+           width: 100%;
+           Height: 40px;
+           background-color: white;
+           border-bottom: 1px solid grey;
+           display: flex;
+           justify-content: left;
+           align-items: center;
+           padding: 5px;
+         }
+         
+         #toolbar-2{
+           width: 100%;
+           Height: 40px;
+           background-color: white;
+           border-bottom: 1px solid grey;
+           display: flex;
+           justify-content: left;
+           align-items: center;
+           padding: 3px;
+         }
+         
+         #refresh:hover{border:1px solid grey; border-radius:5px;}
+         #help:hover{border:1px solid grey; border-radius:5px;}
+         
+         #export{
+         	background-color: #2962FF;
+         	color: white;
+         	border: none;
+         	border-radius: 5px;
+         	padding-left: 10px;
+         	padding-right: 10px;
+         	padding-top: 5px;
+         	padding-bottom: 5px;
+         	margin-right: 8px;
+         }#export:hover{box-shadow: 0 0 0 2px #2995ff; background-color: #2995ff}
+         
+</style>
+<body>
+        <div id="toolbar-layouts">
+        <div id="toolbar-1">
+        	    <img src="H-code-editor.png" id="code-editor-icon" style="width: 18px;height:18px;margin-right: 8px;margin-left: 5px;">
+        	    <p style="font-size: 16px;">Live Code Editor</p>
+        	    <img src="H-refresh.png" id="refresh" style="width:20px;height:20px;margin-left: 40px; margin-right: 15px; padding:2px">
+        	    <img src="H-help.png" id="help" style="width:20px;height:20px;margin-right: 8px; padding: 2px;">
+        	    <div id="peso1" style="flex:1;"></div>
+        	    <button id="export">Exportar</button>
+        </div>
+        <div id="toolbar-2">
+             <img src="H-html.png" id="htmlIcon" style="width:20px;height:20px;padding:0px;margin-right: 10px;">
+             <p style="font-size: 17px;">index.html</p>
+             <div id="peso2" style="width: 20%;"></div>
+             <img src="H-close.png" id="errorImg" style="width: 16px;height: 16px;margin-right:5px">
+             <p id="errorText" style="font-size: 17px;margin-right: 15px;">error</p>
+             <img src="H-lines.png" id="linesImg" style="width: 16px; height: 16px;margin-right: 5px;">
+             <p id="linesText" style="font-size: 17px;margin-right: 15px;">Lines</p>
+             <div id="peso3" style="width:15%;"></div>
+             <img src="" style="width:17px;height:17px;margin-right: 10px;">
+        </div>
+        </div>
+     
+        <div class="linha">
+        <div class="coluna">
+        <textarea></textarea>
+        </div>
+        <div class="coluna">
+        <iframe src=""></iframe>
+        </div>
+        </div>
+</body>
+</html>  

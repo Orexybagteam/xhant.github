@@ -1,0 +1,66 @@
+<meta name="viewport" content="width=device-width, initial-scale=0.0">
+<style>
+
+html,body{
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.smartphone {
+  background-color: #000;
+  width: 230px;
+  height: 500px;
+  border-radius: 30px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  border: 7px solid black;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.smartphone:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  border-radius: 15px;
+  background-color: #eee;
+  z-index: -1;
+}
+	
+	
+</style>
+<html>
+	
+	<div class="container">
+		  <div class="smartphone">
+  <iframe src="https://www.example.com" class="content"></iframe>
+</div>
+		
+	</div>
+	
+	
+</html>
+<script>
+	
+	
+</script>
