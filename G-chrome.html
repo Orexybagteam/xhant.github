@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.8">
+</head>
+<style>
+
+	 *{
+	 	font-family: sans-serif;
+	 	font-weight: normal;
+	 	padding: 0;
+	 	margin: 0;
+	 	overflow: hidden;
+	 }
+	 
+	 .tabs{
+	 	flex:1;
+	 	height: 35px;
+	 	display: flex;
+	 	display: flex;
+	  background-color: #DDE1E5;
+	  justify-content: left;
+	  align-items: center;
+	  padding-top: 10px;
+	  padding-bottom: 0px;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	 }
+	 
+	 #chromeIcon{
+	 	width: 17px;
+	 	height: 17px;
+	 	padding: 4px;
+	 }#chromeIcon:hover{background-color: #eee; border-radius: 5px;}
+	 
+	 #divider1{
+	 	width: 1px;
+	 	height: 80%;
+	 	background-color: grey;
+	 	margin-right: 15px;
+	 	margin-left: 10px;
+	 }
+	 
+	 #tab1{
+	 	width: 150px;
+	 	height: 100%;
+	 	background-color: white;
+	 	border-radius: 10px 10px 0px 0px;
+	 	display: flex;
+	 	display: flex;
+	 	justify-content: left;
+	 	align-items: center;
+	 	padding-left: 10px;
+	 	padding-right: 10px;}
+	 #googleIcon{
+	 	width: 13px;
+	 	height: 13px;}
+	 #googleText{
+	 	font-size: 13px;
+	 	margin-left: 5px;}
+	 #peso1{
+	 	flex:1;}
+	 #closeIcon{
+	 	width: 15px;
+	 	height: 15px;
+	 	padding: 3px;
+	 }#closeIcon:hover{background-color: lightgrey;border-radius: 5px;}
+	 
+	 
+	.searchBar{
+		flex: 1;
+		height: 35px;
+		background-color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		border-bottom: 0.5px solid grey;
+		display: flex;
+		display: flex;
+		justify-content: left;
+		align-items: center;}
+	#back{
+		width: 17px;
+		height: 17px;
+		padding: 3px;
+	 margin-right: 10px;}
+	 #back:hover{background-color: lightgrey;border-radius: 5px;}
+		#ir{
+		width: 17px;
+		height: 17px;
+		padding: 3px;
+	 margin-right: 10px;}
+	 #ir:hover{background-color: lightgrey;border-radius: 5px;}
+ 	#refresh{
+		width: 17px;
+		height: 17px;
+		padding: 3px;
+	 margin-right: 10px;
+	}#refresh:hover{background-color: lightgrey;border-radius: 5px;}
+	
+	
+	#search{
+		flex: 1;
+	 background-color: #F0F3F3;
+	 height: 60%;
+	 display: flex;
+	 justify-content: left;
+	 align-items: center;
+	 padding: 1px;
+	 border-radius: 15px;
+	}
+	
+	#searchText{
+		margin-left: 10px;
+		font-size: 12px;
+		color: grey;
+	}
+	
+	#user{
+		width: 17px;
+		height: 17px;
+		margin: 0px 5px 0px 8px;
+	}
+	
+		#options{
+		width: 18px;
+		height: 18px;
+		margin: 0px 5px 0px 0px;
+	}
+
+
+	.webContent{
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	#googlelogo{
+		width: 150px;
+		height: 50px;
+		transform: translateY(-60px);
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	
+	#searchbar{
+		width: 50%;
+		height: 35px;
+		border: 0.5px solid gray;
+		border-radius: 1vmax;
+		transform: translateY(-45px);
+	}
+	
+	#searchbtn{
+		width: 100px;
+		height: 30px;
+		border: none;
+		background-color: #2962ff;
+		border-radius: 5px;
+		color: white;
+		font-size: 14px;
+		transform: translateY(-25px);
+	}
+
+#popular-websites-div{
+	width: 100%;
+	height: auto;
+	display: flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#site1{
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin-right: 15px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}#site1:hover{border: 1px solid grey;}
+	
+	
+#site2{
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin-right: 15px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}#site2:hover{border: 1px solid grey;}
+
+#site3{
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin-right: 15px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}#site3:hover{border: 1px solid grey;}
+	
+	
+#site4{
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin-right: 15px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}#site4:hover{border: 1px solid grey;}
+	
+	
+#site5{
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}#site5:hover{border: 1px solid grey;}
+
+#popularSitesIcon{
+	width: 25px;
+	height: 25px;
+}
+
+#formsApp{
+ width: 20px;
+	height: 25px;
+}
+
+/*bottom bar Area*/
+	
+	
+.desktopBottomBar{
+	width: 100%;
+	height: 40px;
+	background-color: #04021c;
+	position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+#go-to-home{
+	height: 22px;
+	width: 22px;
+	background-color: white;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+#youtube{
+ height: 17px;
+	width: 22px;
+	margin-right: 10px;
+	padding: 3px;
+}#youtube:hover{border: 1px solid white; border-radius: 5px;}
+
+#keep{
+	height: 19px;
+	width: 19px;
+	margin-right: 10px;
+	padding: 3px;
+}#keep:hover{border: 1px solid white; border-radius: 5px;}
+
+#chorome{
+	height: 19px;
+	width: 19px;
+	margin-right: 10px;
+	padding: 3px;
+}#chorome:hover{border: 1px solid white; border-radius: 5px;}
+
+#paint{
+	height: 19px;
+	width: 19px;
+	padding: 3px;
+}#paint:hover{border: 1px solid white; border-radius: 5px;}
+
+/*fim do bottom area*/
+	
+</style>
+<html>
+	
+	<div class="tabs">
+		    <img src="F-chrome.png" id="chromeIcon">
+		    <div id="divider1"></div>
+		    <div id="tab1"><img src="G-google-icon.png" id="googleIcon"><h1 id="googleText">Google</h1><div id="peso1"></div><img src="G-close.png" id="closeIcon"></div>
+	</div>
+	
+	
+	<div class="searchBar">
+		    <img src="G-back.png" id="back">
+		    <img src="G-ir.png" id="ir">
+		    <img src="G-refresh.png" id="refresh">
+		    <div id="search"><p id="searchText">Pesquisar na web</p></div>
+		    <img src="E-user.png" id="user">
+		    <img src="E-options.png" id="options">
+	</div>
+	
+	
+	<div class="webContent">
+      <img src="G-google-logo.png" id="googlelogo">
+      <div id="searchbar"> <textarea id="searchbarTextarea" style="width: 100%; height:100%; font-size:18px; border:none;"></textarea> </div>
+      <button id="searchbtn">Search</button>
+      <div id="popular-websites-div">
+          <a href="https://www.facebook.com/"><div id="site1"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" id="popularSitesIcon"></div></a>
+          <a href="https://www.instagram.com/"><div id="site2"><img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Instagram-Icon.png"id="popularSitesIcon"></div></a>
+          <a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://mail.google.com/mail/"><div id="site3"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" id="popularSitesIcon"></div></a>
+          <a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://drive.google.com/drive/"><div id="site4"><img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png" id="popularSitesIcon"></div></a>
+          <a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://docs.google.com/forms/u/0/"><div id="site5"><img src="G-forms.png" id="formsApp"></div></a>
+      </div>
+	</div>
+	<!--bottom bar area-->
+	
+	<div class="desktopBottomBar">
+		  <a href="https://www.youtube.com/"> <img src="F-youtube.png" id="youtube"></a>
+		  <a href="https://keep.google.com/"> <img src="F-keep.png" id="keep"></a>
+		  <a href="A-desktop.html"> <img src="E-go-to-home.png" id="go-to-home"></a>
+		  <a href="G-chrome.html"> <img src="F-chrome.png" id="chorome"></a>
+		  <a href="https://paintz.app/"> <img src="F-paint.png" id="paint"></a>
+	</div>
+
+</html>
+<script>
+	
+const myTextarea = document.getElementById("searchbarTextarea");
+const myButton = document.getElementById("searchbtn");
+
+myButton.addEventListener("click", function() {
+  const searchTerm = myTextarea.value;
+  const searchUrl = "https://www.google.com/search?q=" + searchTerm;
+  window.location.href = searchUrl;
+});
+	
+	
+	
+</script>

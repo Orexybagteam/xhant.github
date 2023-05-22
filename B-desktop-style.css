@@ -1,0 +1,729 @@
+*{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+html{
+ 	background-image: url('D-desktop-background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a{
+		text-decoration: none;
+		color: black;
+}
+
+/*Screen area area da tela*/
+.all-screen{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  display: flex;
+}
+
+#coluna1{
+	height: 100vh;
+	width: 50px;
+	display: flex;
+	justify-content: top;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin-right: 5px;
+}
+
+#coluna2{
+	height: 100vh;
+	width: 50px;
+	display: flex;
+	justify-content: top;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 10px;
+	padding-left: 0px;
+	margin-right: 5px;
+}
+
+#coluna3{
+	height: 100vh;
+	width: 50px;
+	display: flex;
+	justify-content: top;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 10px;
+	padding-left: 0px;
+	margin-right: 5px;
+}
+
+#coluna4{
+	height: 100vh;
+	width: 50px;
+	display: flex;
+	justify-content: top;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 8.5px;
+	padding-left: 0px;
+	margin-right: 5px;
+}
+
+/*Apps da tela*/
+
+.app-youtube{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+	background-color: none;
+}.app-youtube:hover{background-color: rgba(255, 255, 255, 0.3); border-radius: 5px;}
+#youtube{
+	width: 17px;
+	height: 12px;
+	display: block;
+	margin-bottom: 7px;}
+#app-youtube-text{
+	font-size: 7px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.app-play-store{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}.app-play-store:hover{background-color: rgba(255, 255, 255, 0.3); border-radius: 5px;}
+#play-store{
+	width: 15px;
+	height: 15px;
+	margin-bottom: 7px;}
+#play-store-text{
+	font-size: 6.8px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.app-eos{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}.app-eos:hover{background-color: rgba(255, 255, 255, 0.3); border-radius: 5px;}
+#eos{
+	width: 18px;
+	height: 18px;
+	margin-bottom: 7px;}
+#eos-text{
+	font-size: 7px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.app-weather{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}.app-weather:hover{background-color: rgba(255, 255, 255, 0.3); border-radius: 5px;}
+#windy{
+	width: 17px;
+	height: 17px;
+	margin-bottom: 7px;}
+#weather-text{
+	font-size: 7px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.app-maps{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}.app-maps:hover{background-color: rgba(255, 255, 255, 0.3); border-radius: 5px;}
+#maps{
+	width: 12px;
+	height: 16px;
+	margin-bottom: 7px;}
+#maps-text{
+	font-size: 7px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.app-stellarium{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}.app-stellarium:hover{background-color: rgba(255, 255, 255, 0.3); border-radius: 5px;}
+#stellarium{
+	width: 17px;
+	height: 17px;
+	margin-bottom: 7px;}
+#stellarium-text{
+	font-size: 7px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.app-paint{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}.app-paint:hover{background-color: rgba(255, 255, 255, 0.3); border-radius: 5px;}
+#paint{
+	width: 17px;
+	height: 17px;
+	margin-bottom: 7px;}
+#paint-text{
+	font-size: 7px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.app-cloud{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}.app-cloud:hover{background-color: rgba(255, 255, 255, 0.3); border-radius: 5px;}
+#cloud{
+	width: 17px;
+	height: 17px;
+	margin-bottom: 7px;}
+#cloud-text{
+	font-size: 7px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.app-chrome{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}.app-chrome:hover{background-color: rgba(255, 255, 255, 0.3); border-radius: 5px;}
+#chrome{
+	width: 17px;
+	height: 17px;
+	margin-bottom: 7px;}
+#chrome-text{
+	font-size: 7px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.app-code-editor{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}.app-code-editor:hover{background-color: rgba(255, 255, 255, 0.3); border-radius: 5px;}
+#code-editor{
+	width: 17px;
+	height: 17px;
+	margin-bottom: 7px;}
+#code-editor-text{
+	font-size: 6px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.app-games{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}.app-games:hover{background-color: rgba(255, 255, 255, 0.3); border-radius: 5px;}
+#games{
+	width: 17px;
+	height: 17px;
+	margin-bottom: 7px;}
+#games-Text{
+	font-size: 6px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.app-photopea{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}.app-photopea:hover{background-color: rgba(255, 255, 255, 0.3);; border-radius: 5px;}
+#photopea{
+	width: 16px;
+	height: 16px;
+	margin-bottom: 7px;}
+#photopea-text{
+	font-size: 6px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.app-widgets{
+width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+	margin-top: 1px;
+}.app-widgets:hover{background-color: rgba(255, 255, 255, 0.3);; border-radius: 5px;}
+#widgets{
+	width: 16px;
+	height: 16px;
+	margin-bottom: 7px;}
+#widgets-text{
+	font-size: 6px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+
+
+#dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0px;
+  width: 200px;
+  height: 220px;
+}
+#topbarDialogSamrthpone{
+	display: flex;
+	width: 100%;
+	height: 25px;
+	background-color: blue;
+	justify-content: left;
+	align-items: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#smartphoneAppName{
+	font-size: 12px;
+	color:white;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+#smartphoneAppIcon{
+	width:15px;
+	height:15px;
+	margin-right:5px; 
+}
+#peso2{
+	flex:1;
+}
+#closeDialogSmarthpone{
+	color: white;
+	font-size: 15px;
+	border: none;
+	background-color: transparent;
+	margin-right: 6px;
+	padding-left: 7px;
+	padding-right: 7px;
+}#closeDialogSmarthpone:hover{background-color: red;border-radius:0px;}
+#iframeSamrthpone{
+	width: 100%;
+	height: 100%;
+ padding: 10px;
+}
+
+.app-chat{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}.app-chat:hover{background-color: rgba(255, 255, 255, 0.3); border-radius: 5px;}
+#chat{
+	width: 18px;
+	height: 18px;
+	margin-bottom: 7px;}
+#chat-text{
+	font-size: 6px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.app-news{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}.app-news:hover{background-color: rgba(255, 255, 255, 0.3); border-radius: 5px;}
+#news{
+	width: 16px;
+	height: 16px;
+	margin-bottom: 7px;}
+#news-text{
+	font-size: 6px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.app-codepen{
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}.app-codepen:hover{background-color: rgba(255, 255, 255, 0.3); border-radius: 5px;}
+#codepen{
+	width: 15px;
+	height: 15px;
+	margin-bottom: 7px;}
+#codepen-text{
+	font-size: 6px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+
+
+
+
+
+
+
+/*Taskbar area*/
+.taskbar{
+  width: 100%;
+  height: 40px;
+  background-color: #04021c;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0px;
+}
+#taskbar-options{
+	width: auto;
+	display: flex;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	margin-left: 10px;
+}
+#taskbar-apps{
+	width: auto;
+	height: 40px;
+	position: fixed;
+	bottom: 0;
+	left: 44.5% !important;
+	display: flex;
+	display: flex;
+ justify-content: center;
+ align-items: center;
+}
+#peso1{
+	flex: 1;
+}
+#taskbar-notification{
+	width: auto;
+	display: flex;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	margin-right: 10px;
+}
+
+/*icones do taskbar*/
+
+#settings{
+	width: 17px;
+	height: 17px;
+	padding: 2px;
+}#settings:hover{border: 1px solid white; border-radius: 5px;}
+
+#full-screen{
+	width: 12px;
+	height: 12px;
+	padding: 3px;
+	margin-left: 7px;
+}#full-screen:hover{border: 1px solid white; border-radius: 5px;}
+
+#power-off{
+	width: 12px;
+	height: 12px;
+	padding: 3px;
+	margin-left: 7px;
+}#power-off:hover{border: 1px solid white; border-radius: 5px;}
+
+#battery{
+	width: 12px;
+	height: 12px;
+	padding: 3px;
+	margin-left: 7px;
+}#battery:hover{border: 1px solid white; border-radius: 5px;}
+
+#security{
+	width: 11px;
+	height: 11px;
+	padding: 3px;
+	margin-left: 7px;
+}#security:hover{border: 1px solid white; border-radius: 5px;}
+
+#wifi{
+	width: 12px;
+	height: 12px;
+	padding: 3px;
+	margin-left: 7px;
+}#wifi:hover{border: 1px solid white; border-radius: 5px;}
+
+#volume{
+	width: 14px;
+	height: 14px;
+	padding: 2px;
+	margin-left: 7px;
+}#volume:hover{border: 1px solid white; border-radius: 5px;}
+
+#keyboard{
+ width: 15px;
+	height: 15px;
+	padding: 2px;
+}#keyboard:hover{border: 1px solid white; border-radius: 5px;}
+
+/*Taskbar apps e icones*/
+
+#menu{
+	width: 15px;
+	height: 15px;
+	padding: 0;
+	border: 0.5px solid white;
+	border-radius: 50px;
+	margin-left: 5px;
+	margin-right: 5px;
+}#menu:hover{box-shadow: 0px 0px 5px 2px blue;}
+
+/*Area dos tooltip e dialogo*/
+
+.popup-and-tooltip{
+	position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 45px; /* adjust the margin as needed */
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: transparent;
+  justify-content: right;
+  align-items: center;
+  padding: 0px;
+}
+
+#batteryInfoPopUp{
+  width: auto;
+  height: auto;
+  background-color: #04021c;
+  color: white;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 7px;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 10px;
+  transform: translateY(10px);
+}
+
+#computer-popup{
+	width: auto;
+  height: auto;
+  background-color: #04021c;
+  color: white;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 7px;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 10px;
+  transform: translateY(10px);
+  margin-right: 25px;
+}
+
+#wifi-info{
+	width: auto;
+  height: auto;
+  background-color: #04021c;
+  color: white;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 7px;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 10px;
+  transform: translateY(10px);	
+  margin-right: 55px;
+}
+
+
+#sound-info{
+  width: auto;
+  height: auto;
+  background-color: #04021c;
+  color: white;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 7px;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 10px;
+  transform: translateY(10px);	
+  margin-right: 85px;
+}
+
+#keyboard-info{
+	width: auto;
+  height: auto;
+  background-color: #04021c;
+  color: white;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 7px;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 10px;
+  transform: translateY(10px);	
+  margin-right: 110px;
+}
+
+
+/*começo dialogo*/
+
+
+
+.dialog-container {
+			position: relative;
+			display: inline-block;
+		}
+
+		.dialog-trigger {
+			cursor: pointer;
+		}
+
+		.dialog {
+			position: fixed;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			padding: 20px;
+			background-color: #E1E8FB;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			display: none;
+			z-index: 999;
+			border-radius: 5px;
+			margin-bottom: 50px;
+			height:180px;
+			width:200px;
+			flex-direction: column;
+		}
+.dialog-show {
+			display: block;
+		}
+		.dialog-close {
+		}
+		.dialog-close:focus {
+			outline: none;
+		}
+		.dialog-close:hover {
+			color: red;
+		}
+		.dialog-show + .dialog-trigger {
+			opacity: 0.5;
+		}
+.dialog-show + .dialog-trigger:hover {
+			opacity: 1;
+		}
+		
+		/*Fim do dialog*/
+
+
+
+
+
+
+
+
